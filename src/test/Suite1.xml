@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="1" >
+  <test name="Suite example" >
+    <classes>
+      <class name="test.LoadPageTest"/>
+      <class name="test.NewUserTest"/>
+      <class name="test.VerifyLogin"/>
+      <class name="test.ReservationTest"/>       
+    </classes>
+ </test>
+</suite>
