@@ -8,4 +8,5 @@
       <class name="test.ReservationTest"/>       
     </classes>
  </test>
+ 
 </suite>

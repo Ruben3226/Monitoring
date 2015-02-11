@@ -54,7 +54,7 @@ public class RegistryPage {
 	 * @param rePass is the same that pass variable
 	 * @return
 	 */	
-	public RegistryConfirmationPage setNewUser(String firstName,	String lastName, String phone, 
+	public RegistryConfirmationPage createNewUser(String firstName,	String lastName, String phone, 
 			String email, String address, String city, String stateProvince, String postalCode,
 			String country, String userName, String pass, String rePass) {			
 		setFirstName(firstName);

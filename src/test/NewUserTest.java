@@ -1,8 +1,6 @@
 package test;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Util.Authentication;
@@ -19,15 +17,15 @@ import provider.ProviderClass;
 public class NewUserTest {
 
 	@Test(dataProvider = "newUser", dataProviderClass = ProviderClass.class)	
-	public void ReservationTest(String fName, String lName,String phone,String email,String address,String city,String stateProvince,
+	public void ReservationTest(String firstName, String lastName,String phone,String email,String address,String city,String stateProvince,
 			String postalCode, String country, String userName, String pass, String rePass) {			
-		HomePage hp = new HomePage();
+		HomePage hp = new HomePage();		
 		RegistryPage regisUser = hp.clickNewUserLink();
-		RegistryConfirmationPage confirmPage = regisUser.setNewUser(fName, lName, phone, email, address, city, stateProvince, postalCode,
+		RegistryConfirmationPage confirmPage = regisUser.createNewUser(firstName, lastName, phone, email, address, city, stateProvince, postalCode,
 				country, userName, pass, rePass);
 		String expectedMessage = "Note: Your user name is " + userName + ".";
 		Assert.assertEquals(confirmPage.getConfirmMessage(),expectedMessage);		
-		Authentication login = new Authentication();
+		Authentication login = new Authentication();		
 		login.logOut();
 	}
 

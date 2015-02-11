@@ -25,6 +25,7 @@ public class FlightFinderPage {
 	
 	public FlightFinderPage() {
 		driver = SeleniumDriverManager.getManager().getDriver();
+		wait = SeleniumDriverManager.getManager().getWait();
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -51,6 +52,7 @@ public class FlightFinderPage {
 	 */
 	public String getLogOutLink() {	
 		//clear user name field
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("SIGN-OFF"))).getText();;
 		return logoutLink.getText() ;		
 	}
 }

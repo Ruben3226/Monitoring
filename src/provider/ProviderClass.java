@@ -19,7 +19,7 @@ public class ProviderClass {
 	 */
 	@DataProvider(name = "Login")
 	public static Object[][] createData() {
-		Object[][] user={{"Login1","123"},{"Rub","123"}};
+		Object[][] user={{"user1","123"},{"Rub","456"},{"Rub","123"},{"user3","789"}};
 		return(user);
 	}	
 	
