@@ -1,4 +1,4 @@
-package page.home;
+package framework.page.home;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import page.login.LoginPage;
-import page.registry.RegistryPage;
-import driver.SeleniumDriverManager;
+import commons.SeleniumDriverManager;
+
+import framework.page.login.LoginPage;
+import framework.page.registry.RegistryPage;
 
 /**
  * 

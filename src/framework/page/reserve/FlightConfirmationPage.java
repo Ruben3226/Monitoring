@@ -1,9 +1,10 @@
-package page.reserve;
+package framework.page.reserve;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import driver.SeleniumDriverManager;
+
+import commons.SeleniumDriverManager;
 
 /**
  * Title:

@@ -3,20 +3,19 @@ package test;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import Util.Authentication;
-import page.home.HomePage;
-import page.login.LoginPage;
-import page.reserve.AirlinePage;
-import page.reserve.FlightConfirmationPage;
-import page.reserve.FlightFinderPage;
-import page.reserve.PurchasePage;
-import provider.ProviderClass;
+import framework.page.home.HomePage;
+import framework.page.login.LoginPage;
+import framework.page.reserve.AirlinePage;
+import framework.page.reserve.FlightConfirmationPage;
+import framework.page.reserve.FlightFinderPage;
+import framework.page.reserve.PurchasePage;
+import util.Authentication;
+import util.provider.ProviderClass;
 
 /**
- * Title:
+ * Title: Verify that a user can book a flight
  * @author Ruben Blanco
  *
  */
@@ -27,10 +26,10 @@ public class ReservationTest {
 			String air,String City,	String BillAddress, String LastNameCard, String MidleNameCard,	String FirstNameCard,
 			String ExpirationYear, String ExpirationMonth, String CardNumber, String CardType,	String MealType, String LastName, String FirstPassenger) {			
 		HomePage hp = new HomePage();
-		LoginPage login=hp.clickSignonLink();
-		FlightFinderPage fly=login.doLogin("Rub", "123");
-		AirlinePage airLine=fly.selectFlight(passengerCount,month,day,arriveCity,returnMonth, returnDay, air);
-		PurchasePage purchasePage=airLine.SelectAirline();
+		LoginPage login = hp.clickSignonLink();
+		FlightFinderPage fly = login.doLogin("Rub", "123");
+		AirlinePage airLine = fly.selectFlight(passengerCount,month,day,arriveCity,returnMonth, returnDay, air);
+		PurchasePage purchasePage = airLine.SelectAirline();
 		FlightConfirmationPage purchase = purchasePage.makePurchase(City,BillAddress,LastNameCard,MidleNameCard,FirstNameCard,ExpirationYear,
 				ExpirationMonth,CardNumber,CardType,MealType,LastName,FirstPassenger);
 		boolean isReserved = purchase.verifyConfirmMessage();

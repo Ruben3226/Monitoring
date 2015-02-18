@@ -5,11 +5,10 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import page.home.HomePage;
-import page.registry.RegistryConfirmationPage;
-import page.registry.RegistryPage;
-import Util.Authentication;
-import driver.SeleniumDriverManager;
+import util.Authentication;
+import framework.page.home.HomePage;
+import framework.page.registry.RegistryConfirmationPage;
+import framework.page.registry.RegistryPage;
 
 public class UIMethods {
 

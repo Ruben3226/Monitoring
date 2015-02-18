@@ -3,11 +3,11 @@ package test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Util.Authentication;
-import page.home.HomePage;
-import page.registry.RegistryConfirmationPage;
-import page.registry.RegistryPage;
-import provider.ProviderClass;
+import framework.page.home.HomePage;
+import framework.page.registry.RegistryConfirmationPage;
+import framework.page.registry.RegistryPage;
+import util.Authentication;
+import util.provider.ProviderClass;
 
 /**
  * Title: Verify that a new user is created

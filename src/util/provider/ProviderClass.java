@@ -1,10 +1,10 @@
-package provider;
+package util.provider;
 
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
 
-import reader.ReadExcelFile;
+import util.reader.excelreader.ReadExcelFile;
 
 /**
  * 

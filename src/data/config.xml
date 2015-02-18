@@ -1,0 +1,12 @@
+<conf>
+	<execution>	
+		<browser>firefox</browser>
+		<path>\lib\driver\chromedriver.exe</path>
+		<url>http://newtours.demoaut.com</url>		
+	</execution>		
+	<user>
+		<username>Rub</username>
+		<password>123</password>
+	</user>
+	
+</conf>

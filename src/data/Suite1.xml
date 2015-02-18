@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="example suite 1" verbose="1" >
+  <listeners>
+	  <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+
   <test name="Suite example" >
+   <packages>
+      <package name="test" />
+   </packages>
     <classes>
       <class name="test.LoadPageTest"/>
       <class name="test.NewUserTest"/>

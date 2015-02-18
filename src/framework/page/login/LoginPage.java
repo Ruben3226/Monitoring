@@ -1,4 +1,4 @@
-package page.login;
+package framework.page.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,8 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import page.reserve.FlightFinderPage;
-import driver.SeleniumDriverManager;
+import commons.SeleniumDriverManager;
+
+import framework.page.reserve.FlightFinderPage;
 
 /**
  * 

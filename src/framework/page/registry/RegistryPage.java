@@ -1,4 +1,4 @@
-package page.registry;
+package framework.page.registry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driver.SeleniumDriverManager;
+import commons.SeleniumDriverManager;
 
 /**
  * Title: This class is performed to create the new user

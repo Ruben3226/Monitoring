@@ -1,4 +1,4 @@
-package page.reserve;
+package framework.page.reserve;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import driver.SeleniumDriverManager;
+import commons.SeleniumDriverManager;
 
 /**
  * 
@@ -34,7 +34,7 @@ public class FlightFinderPage {
 	 * @return AirlinePage object
 	 */
 	public AirlinePage selectFlight(String passengerCount, String month, String day, String arriveCity, String returnMonth, String returnDay, String air){
-		new Select(driver.findElement(By.name(""))).selectByVisibleText(passengerCount);
+		new Select(driver.findElement(By.name("passCount"))).selectByVisibleText(passengerCount);
 		new Select(driver.findElement(By.name("fromMonth"))).selectByVisibleText(month);
 		new Select(driver.findElement(By.name("fromDay"))).selectByVisibleText(day);
 		new Select(driver.findElement(By.name("toPort"))).selectByVisibleText(arriveCity);

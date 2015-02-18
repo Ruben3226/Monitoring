@@ -1,4 +1,4 @@
-package page.registry;
+package framework.page.registry;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import commons.SeleniumDriverManager;
 import commons.UIMethods;
-import page.login.LoginPage;
-import driver.SeleniumDriverManager;
+import framework.page.login.LoginPage;
 
 /**
  * Title: in this class is verified the confirmation message of created new user

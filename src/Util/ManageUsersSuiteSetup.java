@@ -1,21 +1,21 @@
-package Util;
+package util;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.http.auth.UsernamePasswordCredentials;
+import jxl.JXLException;
+
 import org.testng.annotations.BeforeSuite;
 
 import commons.UIMethods;
-import jxl.JXLException;
 
 public class ManageUsersSuiteSetup {
 
 	public static List<Map<String, String>> usersXLS;
 
-	@BeforeSuite //(groups = {"Acceptance"})
-	public void init() throws JXLException, IOException 
+	//@BeforeSuite //(groups = {"Acceptance"})
+	public void CreateUserUI() throws JXLException, IOException 
 	{
 		ExcelSheetReader xlsFile = new ExcelSheetReader(System.getProperty("user.dir") + "/src/data/ManageUsersSuiteSetup.xls");
 		usersXLS = xlsFile.getValues("Users");			

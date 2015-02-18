@@ -3,7 +3,7 @@ package test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import page.home.HomePage;
+import framework.page.home.HomePage;
 
 /**
  * Title: Verify that page is loaded
